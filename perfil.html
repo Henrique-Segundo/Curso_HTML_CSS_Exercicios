@@ -6,34 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png" /> <!--Creditos john lennon-->
     <title>Currículo Online - Perfil</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <main>
+    <main id="tela_perfil">
         <header>
             <span id="topo"></span> <!--ancora interna-->
-            <h1> Nome completo da pessoa</h1>
-            <hr /> <!-- Linha horizontal-->
 
             <figure>
                 <!--FOTO DO PERFIL-->
-                <img src="images/Icon.png" width="100px" alt="Foto do perfil, imagem base disponivel no site Pixabay" />
+                <img id="foto_perfil" src="images/Icon.png" width="200px"
+                    alt="Foto do perfil, imagem base disponivel no site Pixabay" />
                 <!--imagem base disponivel em: https://pixabay.com/pt/vectors/atribui%C3%A7%C3%A3o-%C3%ADcone-%C3%ADcone-de-pessoa-2888829/ -->
                 <figcaption>Foto do usuario</figcaption>
             </figure>
 
-            <blockquote>&#10077; Descrição resumida da pessoa como "Professor de ...", "Designer de ...", "Especialista
-                em
-                ...", "Profissional em ..." &#10078;</blockquote>
+            <div id="dados">
+                <h1> Nome completo da pessoa</h1>
 
-            <span class="localizacao"> Cidade</span>,
-            <span class="localizacao">Estado</span> &sdot;
-            <span class="localizacao"> País</span> &sdot;
-            <nav>
-                <a href="#info-contatos">Informações de contato</a>
-                <a href="projetos.html">Projetos</a>
-            </nav>
-
+                <blockquote>&#10077; Descrição resumida da pessoa como "Professor de ...", "Designer de ...",
+                    "Especialista
+                    em
+                    ...", "Profissional em ..." &#10078;</blockquote>
+                <div id="locais">
+                    <span class="localizacao"> Cidade</span>,
+                    <span class="localizacao">Estado</span> &sdot;
+                    <span class="localizacao"> País</span>
+                    <nav id="menu_top">
+                        <a href="#info-contatos">Informações de contato</a>
+                        <a href="projetos.html">Projetos</a>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <section id="perfil">
@@ -71,31 +76,32 @@
                     <li>Soft Skills (Habilidades de comunicação e relação Interpessoal)</li>
                     <li>Linguagens (Português, Inglês, ...) em casos de não haver uma sessão especifica</li>
                 </ul>
-
-                <hr />
             </article>
             <article id="info-contatos">
                 <h2>Informações de contato</h2>
-
+                <p>
                 <h3>Rede social, Instagram</h3>
                 <a href="https://www.instagram.com">@usuario</a>
+                </p>
+                <p>
                 <h3>E-mail</h3>
                 <a href="mailto:henriquesegundo2000@gmail.com" target="_blank"
                     rel="nooreper">emaildocandidato@gmail.com</a>
+                </p>
                 <h3>Celular</h3>
                 <p>(00) 00000-0000</p>
             </article>
 
         </section>
 
-        <footer>
-            <nav>
+        <footer id="rodape">
+            <nav id="menu_rodape">
+                <li id="ir_para_topo"><a href="#topo">&#9757; Ir para o topo</a></li>
                 <ul>
-                    <li><a href="#topo">&#9757; Ir para o topo</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#experiencia">Experiência</a></li>
                     <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#competencias">Competências e Habilidades</a></li>
+                    <li><a href="#competencias">Competências</a></li>
                     <li><a href="projetos.html">Sobre</a></li>
                 </ul>
             </nav>
