@@ -6,42 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.png" /> <!--Creditos john lennon-->
     <title>Currículo Online - Login</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
-    <div id="login">
+    <main id="tela_login">
+        <div id="login">
 
-        <figure>
-            <img src="images/Icon.png" width="100px" alt="Logo" />
-            <!--imagem base disponivel em: https://pixabay.com/pt/vectors/atribui%C3%A7%C3%A3o-%C3%ADcone-%C3%ADcone-de-pessoa-2888829/ -->
-        </figure>
+            <figure>
+                <img src="images/Icon.png" width="100px" alt="Logo" />
+                <!--imagem base disponivel em: https://pixabay.com/pt/vectors/atribui%C3%A7%C3%A3o-%C3%ADcone-%C3%ADcone-de-pessoa-2888829/ -->
+            </figure>
 
-        <h1>Logar</h1>
+            <h1>Logar</h1>
 
-        <form action="" method="POST">
+            <form action="" method="POST">
 
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Insira seu email" />
-            </div>
-                <br/>
-            <div>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha" placeholder="Insira sua senha" />
-            </div>
-                <br/>
-            <div>
-                <input type="submit" name="btn-enviar" id="btn-enviar" value="Enviar" />
-                &nbsp;
-                <input type="reset" name="btn-limpar" id="btn-limpar" value="Limpar" />
-            </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu email" required autofocus />
+                </div>
+                <br />
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Insira sua senha" required />
+                </div>
+                <br />
+                <div>
+                    <input type="submit" name="btn-enviar" id="btn-enviar" value="Enviar" />
+                    &nbsp;
+                    <input type="reset" name="btn-limpar" id="btn-limpar" value="Limpar" />
+                </div>
 
-        </form>
-    </div>
+            </form>
+        </div>
 
-    <hr>
-    <a href="perfil.html">PERFIL</a>
-
+        <hr>
+        <a href="perfil.html">PERFIL</a>
+    </main>
 </body>
 
 </html>
